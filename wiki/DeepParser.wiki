@@ -1,0 +1,29 @@
+This package contains the implementation of the system described in (Miguel Ballesteros, Bernd Bohnet, Simon Mille and Leo Wanner. Deep-Syntactic Parsing. COLING 2014)
+
+USAGE - training and parsing.
+
+java -jar DeepParser.jar -s <surfacetreebank> -d <deeptreebank> -st <surfaceinput>
+
+this would produce a file "dsynt_final_output_post.conll" which is the output of the system.
+
+--------------
+Example:
+
+java -jar DeepParser.jar -s ../Treebank/SSyntSpa_training_set31May.conll -d ../Treebank/SSyntSpa_training_set31May.conll -st ../Treebank/SSyntSpa_test_set31May.conll_id0.conll
+
+------------
+
+EVALUATION
+
+java -jar Evaluation.jar -g <deepgold> -s <deepoutput>
+
+java -jar Evaluation.jar -g ../Treebank/DSyntSPA_test_set31May.conll -s dsynt_final_output_post.conll
+
+--------------------------------------------------
+
+If you want to use the whole pipeline, you should train a surface model with the joint parser, pos-tagger and morphology tagger. See, https://code.google.com/p/mate-tools/wiki/ParserAndModels
+and then use its output as the input of the deep-syntactic parser.
+
+--------------------------------------------------
+
+Miguel Ballesteros, Bernd Bohnet, Simon Mille and Leo Wanner.
