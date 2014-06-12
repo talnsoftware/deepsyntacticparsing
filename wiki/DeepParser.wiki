@@ -15,7 +15,7 @@ This package contains the implementation of the system described in (Miguel Ball
 
 USAGE - training and parsing.
 
-<blackcoute>java -jar DeepParser.jar -s <surfacetreebank> -d <deeptreebank> -st <surfaceinput></blackcoute>
+<p>java -jar DeepParser.jar -s <surfacetreebank> -d <deeptreebank> -st <surfaceinput></p>
 
 this would produce a file "dsynt_final_output.conll" which is the output of the system.
 
