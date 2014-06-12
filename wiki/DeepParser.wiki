@@ -3,7 +3,7 @@
 <ul>
   <li>Download of the Deep-Syntactic Parser: <a href="https://drive.google.com/file/d/0B8nESzOdPhLsS1lIZDJtbWdMVXc/edit?usp=sharing">deepparser.jar</a>
 </li>
-  <li>Download the evaluation script: <a href="https://drive.google.com/file/d/0B8nESzOdPhLsa3NIei1ZX0QwMkE/edit?usp=sharing">evaluation.jar</a>
+  <li>Download of the evaluation script: <a href="https://drive.google.com/file/d/0B8nESzOdPhLsa3NIei1ZX0QwMkE/edit?usp=sharing">evaluation.jar</a>
 </li>
 </ul>
 
@@ -13,29 +13,4 @@ To download the treebanks, please contact miguel.ballesteros@upf.edu and simon.m
 
 This package contains the implementation of the system described in (Miguel Ballesteros, Bernd Bohnet, Simon Mille and Leo Wanner. Deep-Syntactic Parsing. COLING 2014)
 
-USAGE - training and parsing.
-
-<p>java -jar DeepParser.jar -s <surfacetreebank> -d <deeptreebank> -st <surfaceinput></p>
-
-this would produce a file "dsynt_final_output.conll" which is the output of the system.
-
-Example:
-
-java -jar DeepParser.jar -s ../Treebank/SSyntSpa_training_set31May.conll -d ../Treebank/SSyntSpa_training_set31May.conll -st ../Treebank/SSyntSpa_test_set31May.conll_id0.conll
-
-------------
-
-EVALUATION
-
-java -jar Evaluation.jar -g <deepgold> -s <deepoutput>
-
-java -jar Evaluation.jar -g ../Treebank/DSyntSPA_test_set31May.conll -s dsynt_final_output_post.conll
-
---------------------------------------------------
-
-If you want to use the whole pipeline, you should train a surface model with the joint parser, pos-tagger and morphology tagger. See, https://code.google.com/p/mate-tools/wiki/ParserAndModels
-and then use its output as the input of the deep-syntactic parser.
-
---------------------------------------------------
-
-Miguel Ballesteros, Bernd Bohnet, Simon Mille and Leo Wanner.
+Download the <a href="https://drive.google.com/file/d/0B8nESzOdPhLsd3FTV1YzYVplWFU/edit?usp=sharing">README</a> file.
