@@ -1,3 +1,6 @@
+
+Download the https://drive.google.com/file/d/0B8nESzOdPhLsS1lIZDJtbWdMVXc/edit?usp=sharing
+
 This package contains the implementation of the system described in (Miguel Ballesteros, Bernd Bohnet, Simon Mille and Leo Wanner. Deep-Syntactic Parsing. COLING 2014)
 
 USAGE - training and parsing.
