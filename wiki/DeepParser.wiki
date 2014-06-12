@@ -1,12 +1,15 @@
-Download of the Deep-Syntactic Parser: <a href="https://drive.google.com/file/d/0B8nESzOdPhLsS1lIZDJtbWdMVXc/edit?usp=sharing">DeepParser.jar</a>
+<h1>Deep-Syntactic Parser</h1>
 
 <ul>
   <li>Download of the Deep-Syntactic Parser: <a href="https://drive.google.com/file/d/0B8nESzOdPhLsS1lIZDJtbWdMVXc/edit?usp=sharing">DeepParser.jar</a>
 </li>
+  <li>Download the evaluation script: <a href="https://drive.google.com/file/d/0B8nESzOdPhLsa3NIei1ZX0QwMkE/edit?usp=sharing">evaluation.jar</a>
+</li>
 </ul>
 
 
-To download the treebanks, please contact miguel.ballesteros@upf.edu
+To download the treebanks, please contact miguel.ballesteros@upf.edu and simon.mille@upf.edu
+-------------------------------------------------------------------------------
 
 This package contains the implementation of the system described in (Miguel Ballesteros, Bernd Bohnet, Simon Mille and Leo Wanner. Deep-Syntactic Parsing. COLING 2014)
 
@@ -14,7 +17,7 @@ USAGE - training and parsing.
 
 java -jar DeepParser.jar -s <surfacetreebank> -d <deeptreebank> -st <surfaceinput>
 
-this would produce a file "dsynt_final_output_post.conll" which is the output of the system.
+this would produce a file "dsynt_final_output.conll" which is the output of the system.
 
 --------------
 Example:
