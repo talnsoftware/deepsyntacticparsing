@@ -15,11 +15,10 @@ This package contains the implementation of the system described in (Miguel Ball
 
 USAGE - training and parsing.
 
-java -jar DeepParser.jar -s <surfacetreebank> -d <deeptreebank> -st <surfaceinput>
+<blackcoute>java -jar DeepParser.jar -s <surfacetreebank> -d <deeptreebank> -st <surfaceinput></blackcoute>
 
 this would produce a file "dsynt_final_output.conll" which is the output of the system.
 
---------------
 Example:
 
 java -jar DeepParser.jar -s ../Treebank/SSyntSpa_training_set31May.conll -d ../Treebank/SSyntSpa_training_set31May.conll -st ../Treebank/SSyntSpa_test_set31May.conll_id0.conll
