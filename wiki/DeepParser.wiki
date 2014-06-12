@@ -1,4 +1,10 @@
-Download the <a href="https://drive.google.com/file/d/0B8nESzOdPhLsS1lIZDJtbWdMVXc/edit?usp=sharing">DeepParser.jar</a>
+Download of the Deep-Syntactic Parser: <a href="https://drive.google.com/file/d/0B8nESzOdPhLsS1lIZDJtbWdMVXc/edit?usp=sharing">DeepParser.jar</a>
+
+<li>
+  Download of the Deep-Syntactic Parser: <a href="https://drive.google.com/file/d/0B8nESzOdPhLsS1lIZDJtbWdMVXc/edit?usp=sharing">DeepParser.jar</a>
+
+</li>
+
 
 To download the treebanks, please contact miguel.ballesteros@upf.edu
 
