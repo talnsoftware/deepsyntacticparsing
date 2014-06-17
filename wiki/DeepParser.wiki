@@ -7,8 +7,6 @@
 </li>
 </ul>
 
-
-To download the treebanks, please contact miguel.ballesteros@upf.edu and simon.mille@upf.edu
 -------------------------------------------------------------------------------
 
 This package contains the implementation of the system described in (Miguel Ballesteros, Bernd Bohnet, Simon Mille and Leo Wanner. Deep-Syntactic Parsing. COLING 2014)
