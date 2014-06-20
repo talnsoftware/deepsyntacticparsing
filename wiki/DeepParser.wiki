@@ -13,4 +13,4 @@ This package contains the implementation of the system described in (Miguel Ball
 
 Download the <a href="https://drive.google.com/file/d/0B8nESzOdPhLsd3FTV1YzYVplWFU/edit?usp=sharing">README</a> file
 
-and the <a href="https://drive.google.com/file/d/0B8nESzOdPhLsN2xqSHJQRnhPZms/edit?usp=sharing">paper</a>
+and the <a href="https://drive.google.com/file/d/0B8nESzOdPhLsZGJER2o1Qm1kUGc/edit?usp=sharing">paper</a>
