@@ -11,6 +11,40 @@
 
 This package contains the implementation of the system described in (Miguel Ballesteros, Bernd Bohnet, Simon Mille and Leo Wanner. Deep-Syntactic Parsing. COLING 2014)
 
-Download the <a href="https://drive.google.com/file/d/0B8nESzOdPhLsd3FTV1YzYVplWFU/edit?usp=sharing">README</a> file
+USAGE:
 
-and the <a href="https://drive.google.com/file/d/0B8nESzOdPhLsZGJER2o1Qm1kUGc/edit?usp=sharing">paper</a>
+This package contains the implementation of the system described in (Miguel Ballesteros, Bernd Bohnet, Simon Mille and Leo Wanner. Deep-Syntactic Parsing. COLING 2014)
+
+USAGE - training and parsing.
+
+<pre> java -jar DeepParser.jar -s &ltsurfacetreebank&gt -d &ltdeeptreebank&gt -st &ltsurfaceinput&gt -t 0 </pre>
+
+this would train a model and parse a surface input. It would produce a file "dsynt_final_output.conll" which is the output of the system.
+
+If you want to parse with an existing training model, you can use the following command
+
+<pre> java -jar DeepParser.jar -s &ltsurfacetreebank&gt -d &ltdeeptreebank&gt -st &ltsurfaceinput&gt -t 0 </pre>
+
+It would produce a file "dsynt_final_output.conll" which is the output of the system.
+
+--------------
+Example:
+
+<pre> java -jar DeepParser.jar -s ../Treebank/SSyntSpa_training_set31May.conll -d ../Treebank/SSyntSpa_training_set31May.conll -st ../Treebank/SSyntSpa_test_set31May.conll_id0.conll -t 1 </pre>
+
+------------
+
+EVALUATION
+
+<pre> java -jar Evaluation.jar -g &ltdeepgold&gt -s &ltdeepoutput&gt </pre>
+
+<pre> java -jar Evaluation.jar -g ../Treebank/DSyntSPA_test_set31May.conll -s dsynt_final_output_post.conll </pre>
+
+--------------------------------------------------
+
+If you want to use the whole pipeline, you should train a surface model with the joint parser, pos-tagger and morphology tagger. See, https://code.google.com/p/mate-tools/wiki/ParserAndModels
+and then use its output as the input of the deep-syntactic parser.
+
+--------------------------------------------------
+
+Miguel Ballesteros, Bernd Bohnet, Simon Mille and Leo Wanner.
