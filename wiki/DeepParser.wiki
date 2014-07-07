@@ -1,7 +1,7 @@
 <h1>Deep-Syntactic Parser</h1>
 
 <ul>
-  <li>Download of the Deep-Syntactic Parser: <a href="https://drive.google.com/file/d/0B8nESzOdPhLsS1lIZDJtbWdMVXc/edit?usp=sharing">deepparser.jar</a>
+  <li>Download of the Deep-Syntactic Parser: <a href="https://drive.google.com/file/d/0B8nESzOdPhLsS1lIZDJtbWdMVXc/edit?usp=sharing">deepParser.jar</a>
 </li>
   <li>Download of the evaluation script: <a href="https://drive.google.com/file/d/0B8nESzOdPhLsa3NIei1ZX0QwMkE/edit?usp=sharing">evaluation.jar</a>
 </li>
