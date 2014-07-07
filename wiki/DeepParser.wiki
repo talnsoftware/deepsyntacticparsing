@@ -30,7 +30,7 @@ Note that you should call it from the same folder in which you trained the model
 
 EVALUATION
 
-<pre> java -jar Evaluation.jar -g tdeepgold -s deepoutput </pre>
+<pre> java -jar Evaluation.jar -g deepgold -s deepoutput </pre>
 
 --------------------------------------------------
 
