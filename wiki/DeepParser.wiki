@@ -13,7 +13,7 @@ This package contains the implementation of the system described in (Miguel Ball
 
 USAGE - training and parsing.
 
-<pre> java -jar deepParser.jar -s <strong>surfacetreebank</strong> -d <strong>tdeeptreebank</strong> -st <strong>surfaceinput</strong> -t 1 </pre>
+<pre> java -jar deepParser.jar -s <b>surfacetreebank</b> -d <b>tdeeptreebank</b> -st <b>surfaceinput</b> -t 1 </pre>
 
 this would train a model and parse a surface input. It would produce a file "dsynt_final_output.conll" which is the output of the system.
 
