@@ -15,7 +15,7 @@ This package contains the implementation of the system described in (Miguel Ball
 
 <pre> java -jar deepParser.jar -s surfacetreebank -d deeptreebank -st surfaceinput -t 1 </pre>
 
-this would train a SVM model and parse a surface input. It would produce a file "dsynt_final_output.conll" which is the output of the system.
+this would train an SVM model and parse a surface input. It would produce a file "dsynt_final_output.conll" which is the output of the system.
 
 <h3> USAGE - only parsing. </h3>
 
