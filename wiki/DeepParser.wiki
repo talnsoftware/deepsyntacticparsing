@@ -38,9 +38,11 @@ If you want to use the whole pipeline, you should train a surface model with the
 and then use its output as the input of the deep-syntactic parser.
 
 Important note:
-  -> The Deep-Syntactic parser has as input <a href="https://ufal.mff.cuni.cz/conll2009-st/task-description.html">CoNLL09 data format files</a>.
-It uses the following columns as input/features: (1) Form, (2) Lemma, (3) Pos (4) Feat, (5) Head, (6) Deprel. That is, columns 0, 1, 2, 4, 5, 7 and 9. 
+  -> The Deep-Syntactic parser has as input <a href="https://ufal.mff.cuni.cz/conll2009-st/task-description.html">CoNLL09 data format files</a>. In the deep syntax and surface syntax versions.
+It uses the following columns as input/features: (1) FORM, (2) LEMMA, (3) POS (4) FEAT, (5) HEAD, (6) DEPREL. That is, columns 0, 1, 2, 4, 5, 7 and 9. <br>
 This means that the input should have this columns filled and it should be correctly formatted.
+
+--------------------------------------------------
 
 If you have any questions or issues, please do not hesitate to contact <a href="http://miguelballesteros.com>Miguel Ballesteros</a> (miguel.ballesteros@upf.edu)
 
