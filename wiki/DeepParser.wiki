@@ -39,6 +39,7 @@ If you want to use the whole pipeline, you should train a surface model with the
 and then use its output as the input of the deep-syntactic parser.
 
 <img src="http://taln.upf.edu/system/files/resources_files/dsynt.jpg" width=630/>
+(in the figure, "transducer" refers to Deep-Syntax parser)
 
 <strong>Important note:</strong>
 The Deep-Syntactic parser has as input <a href="https://ufal.mff.cuni.cz/conll2009-st/task-description.html">CoNLL09 data format files</a>. In the deep syntax and surface syntax versions.
