@@ -42,7 +42,7 @@ Important note:
 It uses the following columns as input/features: (1) Form, (2) Lemma, (3) Pos (4) Feat, (5) Head, (6) Deprel. That is, columns 0, 1, 2, 4, 5, 7 and 9. 
 This means that the input should have this columns filled and it should be correctly formatted.
 
-If you have any questions or issues, please do not hesitate to contact <a href="miguelballesteros.com>Miguel Ballesteros</a> (miguel.ballesteros@upf.edu)
+If you have any questions or issues, please do not hesitate to contact <a href="http://miguelballesteros.com>Miguel Ballesteros</a> (miguel.ballesteros@upf.edu)
 
 --------------------------------------------------
 
