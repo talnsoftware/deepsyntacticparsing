@@ -37,6 +37,8 @@ Note that you should call it from the same folder in which you trained the model
 If you want to use the whole pipeline, you should train a surface model with the joint parser, pos-tagger and morphology tagger. See, https://code.google.com/p/mate-tools/wiki/ParserAndModels
 and then use its output as the input of the deep-syntactic parser.
 
+<img src="http://taln.upf.edu/system/files/resources_files/dsynt.jpg"/>
+
 Important note:
   -> The Deep-Syntactic parser has as input <a href="https://ufal.mff.cuni.cz/conll2009-st/task-description.html">CoNLL09 data format files</a>. In the deep syntax and surface syntax versions.
 It uses the following columns as input/features: (1) FORM, (2) LEMMA, (3) POS (4) FEAT, (5) HEAD, (6) DEPREL. That is, columns 0, 1, 2, 4, 5, 7 and 9. <br>
