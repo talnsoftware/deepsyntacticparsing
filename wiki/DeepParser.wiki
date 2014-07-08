@@ -29,6 +29,7 @@ Note that you should call it from the same folder in which you trained the model
 ------------
 
 <h3> EVALUATION </h3>
+This script is able to evaluate the deep syntax output produced by the parser.
 
 <pre> java -jar evaluation.jar -g deepgold -s deepoutput </pre>
 
