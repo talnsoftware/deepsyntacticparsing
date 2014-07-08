@@ -50,7 +50,6 @@ It uses the following columns as input/features:
     <li> Head</li>
     <li> Deprel</li>
 </ul>
-  -> It uses the columnns
 
 If you have any questions, please do not hesitate to contact miguel.ballesteros@upf.edu
 
