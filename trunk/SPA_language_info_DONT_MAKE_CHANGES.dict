@@ -1,0 +1,45 @@
+// Language information on SPANISH (SPA)
+// François Lareau
+// February 22, 2006
+
+language{
+
+id{
+  name = spanish
+  iso = SPA
+}
+
+writing{
+  system = latin
+  order = left_to_right
+}
+
+syntax {
+  prodrop = yes
+}
+
+agreement{
+  NV = {
+    subjective = {
+      number = yes
+      person = yes
+    }
+  }
+  NAdj = {
+    modifivative = {
+      number = yes
+      gender = yes
+    }
+    copulative = {
+      number = yes
+      gender = yes
+    }
+    determinative = {
+      number = yes
+      gender = yes
+    }
+  }
+}
+
+}
+
