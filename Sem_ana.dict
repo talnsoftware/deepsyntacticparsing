@@ -1,0 +1,404 @@
+//DSynt-Sem mapping + SSynt-DSynt mapping
+//Language: SPA
+//Author: Simon Mille
+//Date: 03/2010
+
+Sem_ana {
+
+/////////////////////
+// BASIC RELATIONS //
+/////////////////////
+//mapping of regular relations in regular cases
+
+rel {
+  I = A1 
+  II = A2 
+  III = A3 
+  IV = A4
+  V = A5
+  ATTR = A1
+  APPEND = A1
+  COORD = A1
+  coref = coref
+}
+
+/////////////////////
+//LEXICAL FUNCTIONS//
+/////////////////////
+//mapping of Lexical Functions
+
+lf {
+/*
+How this part works (the three following conditions are EXCLUSIVE (only one can be verified in an entry)):
+- if a LF doesn't have the "pred" attribute, the LF is merged with the keyword node.
+- if a LF has the "pred" attribute with just one "sem", the value of "sem" is the name of the node corresponding to the LF in Sem.
+- if a LF has the "pred" attribute with "sem1" and "sem2", two nodes are created, "sem1" being the name of the node corresponding to the LF, "sem2" being an extra node.
+There are some special cases of combination, like Magn, in which a node is systematically added (these conditions can combine with the three above):
+- if there is an attribute "subtype", a rule creates the corresponding node in Sem
+*/
+//--------//
+////OPER////
+//--------//
+
+  Oper1 = {
+    type = Oper		//cannot be factorized if we use just one dico for regular relations and LFs
+    I = 1
+  }
+  Oper2 = {
+    type = Oper
+    I = 2
+  }
+  Oper3 = {
+    type = Oper
+    I = 3
+  }
+  MagnOper1 = {
+    type = Oper
+    subtype=Magn
+    I = 1
+  }
+  IncepOper1 = {
+    type = Oper
+    I = 1
+    pred = {		//cannot be factorized if we use just one dico for regular relations and LFs
+      sem="empezar"
+    }
+  }
+  IncepOper2 = {
+    type = Oper
+    I = 2
+    pred = {		//cannot be factorized if we use just one dico for regular relations and LFs
+      sem="empezar"
+    }
+  }
+  IncepOper3 = {
+    type = Oper
+    I = 3
+    pred = {		//cannot be factorized if we use just one dico for regular relations and LFs
+      sem="empezar"
+    }
+  }
+  FinOper1 = {
+    type = Oper
+    I = 1
+    pred = {		//cannot be factorized if we use just one dico for regular relations and LFs
+      sem="terminar"
+    }
+  }
+  FinOper2 = {
+    type = Oper
+    I = 2
+    pred = {		//cannot be factorized if we use just one dico for regular relations and LFs
+      sem="terminar"
+    }
+  }
+  FinOper3 = {
+    type = Oper
+    I = 3
+    pred = {		//cannot be factorized if we use just one dico for regular relations and LFs
+      sem="terminar"
+    }
+  }
+  Caus1Oper1 = {
+    type = Oper
+    I = 1
+    pred = {		//cannot be factorized if we use just one dico for regular relations and LFs
+      sem="causar"
+    }
+  }
+  Caus1Oper2 = {
+    type = Oper
+    I = 2
+    pred = {		//cannot be factorized if we use just one dico for regular relations and LFs
+      sem="causar"
+    }
+  }
+  Caus1Oper3 = {
+    type = Oper
+    I = 3
+    pred = {		//cannot be factorized if we use just one dico for regular relations and LFs
+      sem="causar"
+    }
+  }
+  CausOper1 = {
+    type = Oper
+    SemA1 = external
+    I = 1
+    pred = {		//cannot be factorized if we use just one dico for regular relations and LFs
+      sem="causar"
+    }
+  }
+  CausOper2 = {
+    type = Oper
+    SemA1 = external
+    I = 2
+    pred = {		//cannot be factorized if we use just one dico for regular relations and LFs
+      sem="causar"
+    }
+  }
+  CausOper3 = {
+    type = Oper
+    SemA1 = external
+    I = 3
+    pred = {		//cannot be factorized if we use just one dico for regular relations and LFs
+      sem="causar"
+    }
+  }
+
+//--------//
+////REAL////
+//--------//
+
+  Real1 = {
+    type = Oper
+    I = 1
+    pred = {		//cannot be factorized if we use just one dico for regular relations and LFs
+      sem="actuar adecuadamente"
+    }
+  }
+  Real2 = {
+    type = Oper
+    I = 2
+    pred = {
+      sem="actuar adecuadamente"
+    }
+  }
+  Real3 = {
+    type = Oper
+    I = 3
+    pred = {
+      sem="actuar adecuadamente"
+    }
+  }
+  ContReal1 = {
+    type = Oper
+    I = 1
+    pred = {
+      sem1="actuar adecuadamente"
+      sem2="continuar"
+    }
+  }
+  ContReal2 = {
+    type = Oper
+    I = 2
+    pred = {
+      sem1="actuar adecuadamente"
+      sem2="continuar"
+    }
+  }
+  ContReal3 = {
+    type = Oper
+    I = 3
+    pred = {
+      sem1="actuar adecuadamente"
+      sem2="continuar"
+    }
+  }
+
+//--------//
+////FUNC////
+//--------//
+
+  Func1 = {
+    type = Func
+    II = 1
+  }
+  Func2 = {
+    type = Func
+    II = 2
+  }
+  Func3 = {
+    type = Func
+    II = 3
+  }
+  Caus1Func1 = {
+    type = Func
+    II = 1
+    pred = {
+      sem="causar"
+    }
+  }
+  Caus1Func2 = {
+    type = Func
+    II = 2
+    pred = {
+      sem="causar"
+    }
+  }
+  Caus1Func3 = {
+    type = Func
+    II = 3
+    pred = {
+      sem="causar"
+    }
+  }
+}
+/////////////////////
+//CORPUS RELATIONS //
+/////////////////////
+
+//Keep following list updated with SSyntRels -> generalize relations mapping rules 
+rel_SSynt {
+  abbrev = ATTR
+  adjunct = ATTR
+  adv = ATTR
+  adv_abs = ATTR
+  adv_clitic = ATTR
+  adv_mod = ATTR
+  adv_obj1 = II
+  adv_obj2 = III
+  adv_obj3 = IV
+  adv_obj4 = V
+  agent = I
+  analyt_fut = "---"
+  analyt_pass = "---"
+  analyt_perf = "---"
+  analyt_progr = "---"
+  appos = ATTR
+  appos_descr = APPEND
+  attr = ATTR
+  attr_descr = APPEND
+  aux_phras = "---"
+  aux_refl_dir = "---"
+  aux_refl_indir = "---"
+  aux_refl_lex = "---"
+  aux_refl_pass = "---"
+  bin_junct = ATTR
+  compar = II
+  compar_conj = II
+  compl1 = II
+  compl2 = III
+  compl_adnom = ATTR
+  coord = COORD
+  coord_conj = II
+  copul = II
+  copul_clitic = II
+  copul_quot = II
+  det = "---"
+  dobj = II
+  dobj_clitic = II
+  dobj_quot = II
+  elect = ATTR
+  inf_obj1 = II
+  inf_obj2 = III
+  juxtapos = APPEND
+  modal = II
+  modif = ATTR
+  modif_abs = ATTR
+  modif_descr = APPEND
+  noun_compl = I
+  num_junct = ATTR
+  obj_copred = ATTR
+  obl_obj1 = II
+  obl_obj2 = III
+  obl_obj3 = IV
+  obl_obj_clitic1 = II
+  obl_obj_clitic2 = III
+  prepos = II
+  prolep = APPEND
+  punc = "---"
+  punc_init = "---"
+  quant = ATTR
+  quasi_coord = COORD
+  quasi_subj = I
+  relat = ATTR
+  relat_descr = APPEND
+  relat_expl = APPEND
+  restr = ATTR
+  sequent = ATTR
+  sub_conj = II
+  subj = I
+  subj_copred = ATTR
+  subj_quot = I
+}
+
+/////////////////////
+//PARSER RELATIONS //
+/////////////////////
+// Parser version V.01 (06/2010), trained on AnCora
+// The output of the parser has been mapped to pre-SSynt (see parser_mapping.dict)
+
+rel_ana {
+  abbrev = ATTR
+  adjunct = ATTR
+  adv = ATTR
+  adv_abs = ATTR
+  adv_clitic = ATTR
+  adv_mod = ATTR
+  adv_obj = UNDEFINED
+  adv_obj1 = II
+  adv_obj2 = III
+  agent = I
+  appos = ATTR
+  appos_descr = APPEND
+  attr = ATTR
+  attr_descr = APPEND
+  aux = "---"
+  aux_phras = "---"
+  aux_refl = "---"
+  aux_refl_dir = "---"
+  aux_refl_indir = "---"
+  aux_refl_lex = "---"
+  aux_refl_pass = "---"
+  compar = II
+  compar_conj = II
+  compl = "II-III"
+  compl1 = II
+  compl2 = III
+  compl_adnom = ATTR
+  coord = COORD
+  coord_conj = II
+  copul = II
+  copul_clitic = II
+  copul_quot = II
+  det = ATTR
+  dobj = II
+  dobj_clitic = II
+  dobj_quot = II
+  elect = ATTR
+  inf_obj = "II-III"
+  inf_obj1 = II
+  juxtapos = APPEND
+  modal = II
+  modif = ATTR
+  modif_abs = ATTR
+  modif_descr = APPEND
+  noun_compl = I
+  num_junct = ATTR
+  obj_copred = ATTR
+  obl_obj = "II-III"
+  obl_obj1 = II
+  obl_obj2 = III
+  obl_obj_clitic = "II-III"
+  obl_obj_clitic1 = II
+  obl_obj_clitic2 = III
+  prepos = II
+  prolep = APPEND
+  punc = "---"
+  punc_init = "---"
+  quant = ATTR
+  quasi_coord = COORD
+  quasi_subj = I
+  relat = ATTR
+  relat_descr = APPEND
+  relat_expl = APPEND
+  restr = ATTR
+  sequent = ATTR
+  sub_conj = II
+  subj = I
+  subj_copred = ATTR
+  subj_quot = I
+}
+
+/////////////////////
+//     PATCHES     //
+/////////////////////
+
+rel_patch {
+  sa=modif
+  s_a=modif
+  sn=noun_compl
+  sp=adv
+  S=adv
+}
+}
