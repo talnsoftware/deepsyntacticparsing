@@ -144,6 +144,18 @@ public class TransducerSurfToDeep {
 		mdLabelclass=new ModelLabellingClassification();
 	}
 	
+	public void setPathSurface(String pathSurface){
+		this.pathSurface=pathSurface;
+	}
+	
+	public void setPathDeep(String pathDeep){
+		this.pathDeep=pathDeep;
+	}
+	
+	public void setPathTestSurface(String pathTestSurface){
+		this.pathTestSurface=pathTestSurface;
+	}
+	
 	
 	
 	public void training() {
